@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-uit-blue: #003366;
+  --color-uit-gold: #F2A900;
+  --font-playfair: var(--font-playfair), serif;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Fix Leaflet map z-index */
+.leaflet-container {
+  z-index: 0;
+}
